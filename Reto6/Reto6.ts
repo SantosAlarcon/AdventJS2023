@@ -1,4 +1,4 @@
-function decode(message: string): string {
+function invertirEnParentesis(message: string): string {
     let decodedMessage = message.split("(")[0];
     let final = message.split(")")[2];
     let palabra_nivel1: string, palabra_nivel2: string = "";
@@ -25,5 +25,5 @@ function decode(message: string): string {
 }
 
 // Ejemplo de uso
-const resultado = decode("hola (odnum)");
+const resultado = invertirEnParentesis("hola (odnum)");
 console.log(resultado); // Resultado: "santaclaus" 
